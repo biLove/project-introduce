@@ -1,0 +1,103 @@
+/*set basic style of body*/
+body {
+	font-family: 'Nunito', sans-serif;
+	font-weight: 500;
+	color: #2d3c49;
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+/* Set header style*/
+.header {
+	width: 100%;
+	margin-top: 44px;
+
+	/* Set bottom line*/
+	border-bottom: 2px solid #7d97ad;
+
+	padding-bottom: 20px;
+	margin: auto;
+
+	/* Set as flex*/
+	display: flex;
+	flex-wrap: wrap;
+}
+
+/* Set logo and title ratio*/
+.logo {
+	max-width: 100px;
+	max-height: 100px;
+	padding-top: 20px;
+	padding-left: 0px;
+	margin-right: auto;
+	width: 25%;
+}
+.head-title {
+	width: 75%;
+	padding-right: 0;
+	margin-right: 0;
+	display: inline;
+	margin-left: auto;
+}
+
+.name {
+	font-weight: 100;
+}
+
+/* Set main pircture style*/
+.main-picture {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	max-height: 400px;
+}
+
+/* Set project styles */
+.sub-project {
+	margin-bottom: 20px;
+}
+
+.project-title {
+	color: #7d97ad;
+}
+
+/* Set project as flex */
+.project-list {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+@media screen and (max-width: 500px) {
+	.sub-project {
+		width: 100%;
+		height: auto;
+	}
+	.head-title {
+		width: 60%;
+	}
+	.logo {
+		width: 40%;
+		max-width: 80px;
+		max-height: 80px;
+	}
+	h1 {
+		font-size: 1.8em;
+	}
+	h2 {
+		font-size: 25px;
+	}
+	h4 {
+		font-size: 15px;
+	}
+}
+
+@media screen and (max-width: 900px) and (min-width: 501px) {
+	.sub-project {
+		width: 50%;
+	}
+}
+
+@media screen and (min-width: 900px) {
+	.sub-project {
+		width: 33.3%;
+	}
+}
